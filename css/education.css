@@ -1,0 +1,141 @@
+.education-container {
+  max-width: 80vw;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 74px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.education {
+  background: #11156a;
+  color: #fcfcfc;
+}
+
+.education-text {
+  font-size: 1.2rem;
+  line-height: 29px;
+  font-weight: 400;
+  max-width: 55ch;
+  margin-bottom: 80px;
+}
+
+.education-college {
+  margin-bottom: 60px;
+  background: #153177;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.college-sec {
+  margin: 10px;
+  display: block;
+}
+
+.college-main {
+  margin-left: 10px;
+  margin-bottom: 80px;
+}
+
+.education-college::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#1778ea, #0d4484);
+  position: absolute;
+  top: 32px;
+  left: -4px;
+}
+
+.education-course {
+  margin-bottom: 60px;
+}
+
+.education h3 {
+  font-size: 1rem;
+  color: #a0a8ab;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.college-main {
+  color: #fcfcfc !important;
+}
+
+.education-course h3::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/education.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -42px;
+}
+.language h3::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/language.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -42px;
+}
+
+.education .subtitle {
+  max-width: 5ch;
+}
+
+.education-course li,
+.language li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.language li {
+  display: block !important;
+}
+
+.language span {
+  color: #a0a8ab;
+}
+
+@media (max-width: 880px) {
+  .education-container {
+    grid-template-columns: 1fr;
+  }
+
+  .subtitle {
+    color: #fcfcfc;
+  }
+}
+
+@media (max-width: 500px) {
+  .education-course h3::before,
+  .language h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}
+
+.education-container::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url(../img/detail.svg);
+  width: 130px;
+  height: 100px;
+  background-repeat: no-repeat;
+  bottom: -65px;
+}
